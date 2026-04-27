@@ -1,0 +1,194 @@
+# Personal Portfolio Website
+
+## index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohamed Naguib - Computer Science Student Portfolio" />
+  <title>Mohamed Naguib | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="cursor"></div>
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">MN.</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-content">
+        <p class="hero-intro">Hello, I'm</p>
+        <h1>Mohamed Naguib</h1>
+        <h2><span id="typing"></span></h2>
+        <p class="hero-description">Passionate about building innovative digital solutions, solving complex problems, and creating meaningful impact through technology.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="mohamed naguib.JPG" alt="Mohamed Naguib" />
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-header">
+        <span>About Me</span>
+        <h2>Who I Am</h2>
+      </div>
+      <div class="about-content">
+        <p>
+          I am a Computer Science student with a deep passion for technology, innovation, and creating impactful digital experiences. My journey revolves around continuous learning, problem-solving, and transforming ideas into elegant solutions. I thrive at the intersection of creativity and logic, building products that are both functional and meaningful.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <div class="section-header">
+        <span>My Expertise</span>
+        <h2>Skills & Tools</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-flutter"></i>
+          <h3>Flutter</h3>
+          <p>Cross-platform mobile application development.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-git-alt"></i>
+          <h3>Git</h3>
+          <p>Version control and collaborative development.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-code"></i>
+          <h3>Problem Solving</h3>
+          <p>Algorithmic thinking and efficient solutions.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>UI Development</h3>
+          <p>Responsive and user-centered interfaces.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section container">
+      <div class="section-header">
+        <span>My Journey</span>
+        <h2>Experience & Education</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span>2023 - Present</span>
+            <h3>Computer Science Student</h3>
+            <p>Minia University</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span>2025</span>
+            <h3>Mobile App Development Intern</h3>
+            <p>Tech Innovations Egypt</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-header">
+        <span>Featured Work</span>
+        <h2>Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="https://via.placeholder.com/600x400.png?text=Flutter+Project" alt="Project Preview">
+          <div class="project-content">
+            <h3>Smart Task Manager</h3>
+            <p>A productivity app built with Flutter to help users manage tasks efficiently across devices.</p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="https://via.placeholder.com/600x400.png?text=Mobile+App" alt="Project Preview">
+          <div class="project-content">
+            <h3>Campus Connect</h3>
+            <p>A student networking platform designed to improve communication and collaboration.</p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container testimonials">
+      <div class="section-header">
+        <span>What People Say</span>
+        <h2>Testimonials</h2>
+      </div>
+      <div class="testimonial-slider">
+        <div class="testimonial active">
+          <p>“Mohamed is a highly motivated and talented developer with exceptional attention to detail.”</p>
+          <h4>— Project Supervisor</h4>
+        </div>
+        <div class="testimonial">
+          <p>“A creative thinker who consistently delivers high-quality work and innovative solutions.”</p>
+          <h4>— Team Lead</h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <div class="section-header">
+        <span>Get In Touch</span>
+        <h2>Let's Connect</h2>
+      </div>
+      <form id="contactForm" class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Mohamed Naguib. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
